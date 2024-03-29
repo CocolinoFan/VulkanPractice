@@ -1,6 +1,7 @@
 #pragma once
 
 #include "cs_window.hpp"
+#include "cs_pipeline.hpp"
 
 namespace cs {
  class FirstApp {
@@ -12,6 +13,7 @@ namespace cs {
 	
 
 	private:
-	CsWin cswin{WIDTH, HEIGHT, "Hello from Vulkan!"};	
+	CsWin cswin{WIDTH, HEIGHT, "Hello from Vulkan!"};
+	CsPipeline csPipleine{"shaders/simple_shader.vert.spv", "shaders/simple_shader.frag.spv"};
  };
 }
